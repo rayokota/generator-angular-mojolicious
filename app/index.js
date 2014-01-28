@@ -12,6 +12,7 @@ var AngularMojoliciousGenerator = module.exports = function AngularMojoliciousGe
 
   this.on('end', function () {
     this.installDependencies({ skipInstall: options['skip-install'] });
+    this.spawnCommand('sh', ['install.sh']);
   });
 
   this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
@@ -48,7 +49,7 @@ AngularMojoliciousGenerator.prototype.app = function app() {
   this.copy('gitignore', '.gitignore');
   this.entities = [];
   this.resources = [];
-  this.version = 0;
+  this.version = 1;
   this.generatorConfig = {
     "baseName": this.baseName,
     "version": this.version,

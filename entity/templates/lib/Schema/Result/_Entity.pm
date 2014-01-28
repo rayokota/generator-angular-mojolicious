@@ -22,7 +22,7 @@ sub TO_JSON {
   return {
     id => $self->id,
     <% _.each(attrs, function (attr) { %>
-    <%= attr.attrName %> => $self-><%= attr.attrName %><% if (attr.attrName == 'Date') { %> ? substr($self-><%= attr.attrName %>, 0, 10) : ""<% } else if (attr.attrName == 'Boolean') { %> ? \1 : \0<% }; %>,
+    <%= attr.attrName %> => $self-><%= attr.attrName %><% if (attr.attrType == 'Date') { %> ? substr($self-><%= attr.attrName %>, 0, 10) : ""<% } else if (attr.attrType == 'Boolean') { %> ? \1 : \0<% }; %>,
     <% }); %>
   }
 }

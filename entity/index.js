@@ -14,11 +14,7 @@ var EntityGenerator = module.exports = function EntityGenerator(args, options, c
   console.log('You called the entity subgenerator with the argument ' + this.name + '.');
 
   this.on('end', function () {
-    if (this.version == 1) {
-      return this.spawnCommand('sh', ['install.sh']);
-    } else {
-      return this.spawnCommand('sh', ['upgrade.sh', this.version]);
-    }
+    return this.spawnCommand('sh', ['upgrade.sh', this.version]);
   });
 
   fs.readFile('generator.json', 'utf8', function (err, data) {
