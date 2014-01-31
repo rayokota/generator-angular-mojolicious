@@ -46,7 +46,6 @@ AngularMojoliciousGenerator.prototype.askFor = function askFor() {
 
 AngularMojoliciousGenerator.prototype.app = function app() {
 
-  this.copy('gitignore', '.gitignore');
   this.entities = [];
   this.resources = [];
   this.version = 1;
