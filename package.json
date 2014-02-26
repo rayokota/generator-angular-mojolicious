@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-mojolicious",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A Yeoman generator for AngularJS + Mojolicious",
   "keywords": [
     "yeoman-generator",
@@ -9,7 +9,7 @@
     "DBIx::Class",
     "DBIC",
     "AngularJS",
-    "Twitter Bootstrap"
+    "Bootstrap"
   ],
   "homepage": "https://github.com/rayokota/generator-angular-mojolicious",
   "bugs": "https://github.com/rayokota/generator-angular-mojolicious/issues",
