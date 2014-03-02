@@ -6,7 +6,7 @@ Mojolicious is a Perl-based micro-framework.  For AngularJS integration with oth
 
 ## Installation
 
-Install [Git](http://git-scm.com), [node.js](http://nodejs.org), and [Perl 5.10.1](http://www.perl.org/).  The development mode also requires [SQLite](http://www.sqlite.org).  Required Perl modules can be installed as follows:
+Install [Git](http://git-scm.com), [node.js](http://nodejs.org), and [Perl 5.10.1](http://www.perl.org/) or later.  The development mode also requires [SQLite](http://www.sqlite.org).  Required Perl modules can be installed as follows (in some cases you may need to append `--force`):
 
 	curl -L cpanmin.us | perl - Mojolicious Modern::Perl DBIx::Class DBIx::Class::Migration \
 		DateTime DateTime::Format::SQLite
@@ -18,6 +18,8 @@ Install Yeoman:
 Install the Angular-Mojolicious generator:
 
     npm install -g generator-angular-mojolicious
+
+The above prerequisites can be installed to a VM using the [Angular-Mojolicious provisioner](https://github.com/rayokota/provision-angular-mojolicious).
 
 ## Creating a Mojolicious service
 
