@@ -60,7 +60,7 @@ sub delete {
   return $self->render_not_found unless $entity;
 
   $entity->delete;
-  $self->rendered(200);
+  $self->rendered(204);
 }
 
 1;
