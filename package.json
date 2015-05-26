@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-mojolicious",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A Yeoman generator for AngularJS + Mojolicious",
   "keywords": [
     "yeoman-generator",
